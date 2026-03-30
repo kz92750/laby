@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer Maratonu Filmowego - Lab 6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-banner">
+            <h1>Witaj na Planerze Maratonu Filmowego!</h1>
+        </div>
+
+        <h2>Zadanie 1 – Powitanie z animacją</h2>
+        <hr>
+
+        <h2>Zadanie 2 – Lista filmów do obejrzenia</h2>
+        <button id="toggle-movies">Pokaż/Ukryj listę filmów</button>
+        <div id="movie-list">
+            <ol>
+                <li>Inception</li>
+                <li>The Matrix</li>
+                <li>Interstellar</li>
+                <li>Blade Runner 2049</li>
+                <li>Dune</li>
+            </ol>
+        </div>
+        <hr>
+
+        <h2>Zadanie 3 – Recenzje z dynamicznym stylowaniem</h2>
+        <p class="review">Inception to film o kradzieży pomysłów z umysłów ludzi podczas snu. Reżyserem jest Christopher Nolan, a w rolach głównych występują Leonardo DiCaprio i Marion Cotillard.</p>
+        <p class="review">The Matrix to kultowy film science fiction o rzeczywistości wirtualnej. Neo odkrywa prawdę o świecie, w którym żyje.</p>
+        <p class="review">Interstellar opowiada o podróży w kosmos w poszukiwaniu nowego domu dla ludzkości. Film Nolana z Matthew McConaughey w roli głównej.</p>
+        <select id="color-select">
+            <option value="red">Czerwony</option>
+            <option value="blue">Niebieski</option>
+            <option value="green">Zielony</option>
+            <option value="purple">Fioletowy</option>
+            <option value="orange">Pomarańczowy</option>
+        </select>
+        <button id="change-text-color">Zmień kolor tekstu</button>
+        <button id="change-bg-color">Zmień kolor tła</button>
+        <hr>
+
+        <h2>Zadanie 4 – Przełączanie stylów recenzji</h2>
+        <p id="marathon-desc" class="klasyczny">Maraton filmowy odbędzie się w sobotę o 18:00 w moim domu. Przygotujcie się na seans filmów science fiction. Pamiętajcie o przekąskach!</p>
+        <button id="btn-klasyczny">Klasyczny</button>
+        <button id="btn-kinowy">Kinowy</button>
+        <hr>
+
+        <h2>Zadanie 5 – Notatki do filmu</h2>
+        <input type="text" id="note-input" placeholder="Wpisz notatkę i naciśnij Enter...">
+        <p id="note-display">Tu pojawi się Twoja notatka</p>
+        <hr>
+
+        <h2>Zadanie 6 – Galeria plakatów filmowych</h2>
+        <img id="large-poster" src="" alt="Powiększony plakat" style="display: none;">
+        <div id="poster-gallery">
+            <img src="https://via.placeholder.com/150x200?text=Inception" alt="Inception" class="poster-thumb">
+            <img src="https://via.placeholder.com/150x200?text=Matrix" alt="The Matrix" class="poster-thumb">
+            <img src="https://via.placeholder.com/150x200?text=Interstellar" alt="Interstellar" class="poster-thumb">
+            <img src="https://via.placeholder.com/150x200?text=Blade+Runner" alt="Blade Runner 2049" class="poster-thumb">
+        </div>
+        <hr>
+
+        <h2>Zadanie 7 – Lista przygotowań do maratonu</h2>
+        <input type="text" id="task-input" placeholder="Wpisz nowe zadanie...">
+        <button id="add-task">Dodaj</button>
+        <button id="remove-last">Usuń ostatni</button>
+        <button id="clear-list">Wyczyść listę</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\dd\Documents\lab6\index.html
