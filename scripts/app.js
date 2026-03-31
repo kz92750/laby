@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    alert("Strona załadowana!");
+    alert("Error");
     $('#welcome-banner').delay(3000).slideUp(1000);
 
     $('#toggle-movies').click(function() {
@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 
     $('#note-input').on('keypress', function(e) {
-        if (e.which === 13) { // Enter key
+        if (e.which === 13) { 
             const note = $(this).val().trim();
             if (note) {
                 if ($('#note-display').html().trim() === 'Tu pojawi się Twoja notatka') {
@@ -35,6 +35,23 @@ $(document).ready(function() {
                 $(this).val('');
             }
         }
+    });
+
+    $('#remove-last-note').click(function() {
+        let content = $('#note-display').html();
+        const lastBrIndex = content.lastIndexOf('<br>');
+        if (lastBrIndex !== -1) {
+            content = content.substring(0, lastBrIndex);
+            if (content.trim() === '') {
+                $('#note-display').html('Tu pojawi się Twoja notatka');
+            } else {
+                $('#note-display').html(content);
+            }
+        }
+    });
+
+    $('#clear-notes').click(function() {
+        $('#note-display').html('Tu pojawi się Twoja notatka');
     });
 
     $('#poster-gallery').on('click', '.poster-thumb', function() {
